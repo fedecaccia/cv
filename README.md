@@ -1,6 +1,13 @@
 # Curriculum Vitae
 To compile in english:
-'''pdflatex cvenglish.tex'''
+
+```bash
+pdflatex cvenglish.tex
+```
+
 To compile in spanish:
-'''pdflatex cvspanish.tex'''
+
+```bash
+pdflatex cvspanish.tex
+```
 
