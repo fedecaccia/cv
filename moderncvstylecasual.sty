@@ -162,7 +162,9 @@
           \addtofooter{\csname\collectionloopkey phonesymbol\endcsname\collectionloopitem}}%
         \ifthenelse{\isundefined{\@email}}{}{\addtofooter{\emailsymbol\emaillink{\@email}}}%
         \ifthenelse{\isundefined{\@homepage}}{}{\addtofooter{\homepagesymbol\httplink{\@homepage}}}%
+        \ifthenelse{\isundefined{\@nacinfo}}{}{\addtofooter{\@nacinfo}}
         \ifthenelse{\isundefined{\@extrainfo}}{}{\addtofooter{\@extrainfo}}%
+        \ifthenelse{\isundefined{\@dniinfo}}{}{\addtofooter{\@dniinfo}}%
         \ifthenelse{\lengthtest{\footerboxwidth=0pt}}{}{\flushfooter}% the lengthtest is required to avoid flushing an empty footer, which could cause a blank line due to the \\ after the address, if no other personal info is used
         }}}%
   \pagestyle{plain}}
