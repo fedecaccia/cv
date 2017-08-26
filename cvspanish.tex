@@ -26,15 +26,15 @@
 % personal data
 \name{Federico Agustín}{Caccia}
 \title{Currículum Vit\ae, Agosto 2017}                               % optional, remove / comment the line if not wanted
-\address{Av. Bustillo 9500, San Carlos de Bariloche}{CP:8400}{Argentina}%% optional, remove / comment the line if not wanted; the "postcode city" and and "country" arguments can be omitted or provided empty
-\phone[mobile]{+54~9~3476~623177}                   % optional, remove / comment the line if not wanted
+%\address{Av. Bustillo 9500, San Carlos de Bariloche}{CP:8400}{Argentina}%% optional, remove / comment the line if not wanted; the "postcode city" and and "country" arguments can be omitted or provided empty
+%\phone[mobile]{+54~9~3476~623177}                   % optional, remove / comment the line if not wanted
 %\phone[fixed]{+2~(345)~678~901}                    % optional, remove / comment the line if not wanted
 %\phone[fax]{+3~(456)~789~012}                      % optional, remove / comment the line if not wanted
-\email{federicoagustincaccia@gmail.com}                               % optional, remove / comment the line if not wanted
-\homepage{www.github.com/fedecaccia}                         % optional, remove / comment the line if not wanted
-\nacinfo{Fecha de nacimiento: 08/02/1989}                 % optional, remove / comment the line if not wanted
-\extrainfo{Estado civil: soltero}                 % optional, remove / comment the line if not wanted
-\dniinfo{DNI: 34297997}                 % optional, remove / comment the line if not wanted
+%\email{federicoagustincaccia@gmail.com}                               % optional, remove / comment the line if not wanted
+%\homepage{www.github.com/fedecaccia}                         % optional, remove / comment the line if not wanted
+%\nacinfo{Fecha de nacimiento: 08/02/1989}                 % optional, remove / comment the line if not wanted
+%\extrainfo{Estado civil: soltero}                 % optional, remove / comment the line if not wanted
+%\dniinfo{DNI: 34297997}                 % optional, remove / comment the line if not wanted
 \photo[64pt][0.4pt]{me}                       % optional, remove / comment the line if not wanted; '64pt' is the height the picture must be resized to, 0.4pt is the thickness of the frame around it (put it to 0pt for no frame) and 'picture' is the name of the picture file
 %\quote{Ingeniero nuclear}                                 % optional, remove / comment the line if not wanted
 
@@ -54,6 +54,31 @@
 %\begin{CJK*}{UTF8}{gbsn}                          % to typeset your resume in Chinese using CJK
 %-----       resume       ---------------------------------------------------------
 \makecvtitle
+
+\section{Información personal}
+
+\cvitem{}{\textbf{Nombre:} \textit{Federico Agustín Caccia}}
+
+\cvitem{}{\textbf{Fecha y lugar de nacimiento:} \textit{8 de Febrero de 1989, Corrientes, Argentina}}
+
+\cvitem{}{\textbf{DNI:} \textit{34297997}}
+%\cvitem{}{\texxtbf{Passport:} \textit{AAE717772}
+
+\cvitem{}{\textbf{Domicilio:} \textit{Av. Bustillo 9500, San Carlos de Bariloche (CP:8400), Argentina}}
+
+\cvitem{}{\textbf{Estado civil:} \textit{Soltero}}
+
+\cvitem{}{\textbf{Número de teléfono:} \texttt{+}\textit{54 9 3476 623177}}
+
+\cvitem{}{\textbf{Email:} \textit{\href{mailto:federicoagustincaccia@gmail.com}{federicoagustincaccia@gmail.com}}}
+
+\cvitem{}{\textbf{Github:} \url{www.github.com/fedecaccia}}
+
+\cvitem{}{\textbf{Linkedin:} \url{www.linkedin.com/in/fedecaccia}}
+
+\cvitem{}{\textbf{ResearchGate:} \url{www.researchgate.net/profile/Federico\_Caccia2}}
+
+
 
 \section{Formación académica}
 \cventry{2017}{Magíster en Ingeniería}{Instituto Balseiro, Universidad Nacional de Cuyo y Comisión Nacional de Energía Atómica}{San Carlos de Bariloche}{}
@@ -88,7 +113,7 @@ Tareas desarrolladas:%
 \item Validación de la línea de cálculo para el modelado del Segundo Sistema de Parada del reactor RA-10.
 \item Análisis multiescala del Segundo Sistema de Parada del reactor RA-10.
 \item Simulaciones fluidodinámicas de flujo bifásico mediante las técnicas de \textit{volume of fluid} utilizando OpenFOAM y \textit{level-set} utilizando Par-GPFEP.
-\item Desarrollo del código maestro Newton para acoplamiento implícito de programas de cálculo.
+\item Desarrollo del código maestro Newton para acoplamiento explícito e implícito de programas de cálculo.
 \item Acoplamiento de códigos neutrónicos (PUMA, Fermi) y códigos termohidráulicos (RELAP5, Par-GPFEP y otros códigos de desarrollo propio).
 \item Implementación de sistemas \texttt{Git} de control de versiones a códigos de cálculo y documentación técnica.
 \end{itemize}}
@@ -114,11 +139,58 @@ Director: Dr. Eduardo Villarino (\href{mailto:men@invap.com.ar}{men@invap.com.ar
 \cvitemwithcomment{Inglés}{Habla, lee y escribe con fluidez.}{}
 \cvitemwithcomment{Francés}{Habilidades de comunicación básicas.}{Certificado internacional A1 en 2015.}
 
-\section{Lenguages de programación}
-\cvdoubleitem{\texttt{C}}{Avanzado} {\texttt{C++}}{Avanzado}
-\cvdoubleitem{\texttt{Fortran}}{Intermedio} {\texttt{Latex}}{Intermedio}
-\cvdoubleitem{\texttt{Octave}}{Avanzado}{\texttt{Python}}{Avanzado}
-\cvitem{\texttt{Scripting}}{Intermedio}
+% \section{Lenguages de programación}
+% \cvdoubleitem{\texttt{C}}{Avanzado} {\texttt{C++}}{Avanzado}
+% \cvdoubleitem{\texttt{Fortran}}{Intermedio} {\texttt{Latex}}{Intermedio}
+% \cvdoubleitem{\texttt{Octave}}{Avanzado}{\texttt{Python}}{Avanzado}
+% \cvitem{\texttt{Scripting}}{Intermedio}
+
+
+\section{Conocimientos técnicos}
+
+\subsection{Lenguajes de programación científica}
+
+\cvdoubleitem
+{\texttt{C}}{Avanzado}
+{\texttt{C++}}{Avanzado}
+
+\cvdoubleitem
+{\texttt{CUDA C}}{Intermedio}
+{\texttt{Fortran}}{Intermedio}
+
+\cvdoubleitem
+{\texttt{Octave}}{Avanzado} 
+{\texttt{Python}}{Avanzado}
+
+\cvitem
+{\texttt{Scripting}}{Intermedio}
+
+\subsection{Programación back-end}
+\cvdoubleitem
+{\texttt{MySQL}}{Básico}
+{\texttt{PHP}}{Básico}
+
+\subsection{Programación front-end}
+\cvdoubleitem
+{\texttt{CSS}}{Intermedio}
+{\texttt{HTML}}{Intermedio}
+
+\cvdoubleitem
+{\texttt{Javascript}}{Básico}
+{\texttt{Markdown}}{Básico}
+
+\subsection{Programación Android}
+\cvdoubleitem
+{\texttt{Kivy}}{Intermedio}
+{\texttt{Unity 3D}}{Básico}
+
+\subsection{Otros}
+
+\cvlistitem{Sistemas operativos: Debian GNU/Linux, Microsoft Windows}
+\cvlistitem{Librerías científicas: {cuRAND, GNU Scientific Library (GSL), Matplotlib, NumPy, OpenMP, OpenMPI, PETSc, PyBrain, PyFoam, SLEPc, ScyPy, Thrust}}
+\cvlistitem{Sotware científico: {GNU Project Debugger (GDB), Gmsh, Gnuplot, Mathematica, MATLAB, OpenFOAM, Origin, Paraview, SALOME}}
+\cvlistitem{Documentación científica y técnica: {Latex, Microsoft Office}}
+\cvlistitem{Sistemas de control de versiones de software: {Git, Mercurial}}
 
 
 \section{Becas}
@@ -139,8 +211,6 @@ Director: Dr. Eduardo Villarino (\href{mailto:men@invap.com.ar}{men@invap.com.ar
 \cvitem{2016}{\textit{Modelado de sistemas termohidráulicos en reactores mediante códigos de planta}, Profesor: Dr. Pablo Zanocco, 80 hs, Instituto Balseiro, Universidad Nacional de Cuyo y Comisión Nacional de Energía Atómica, San Carlos de Bariloche.}
 
 \cvitem{2015}{\textit{Introducción al cómputo en placas gráficas}, Profesor: Dr. Flavio D. Colavecchia, 64 hs, Instituto Balseiro, Universidad Nacional de Cuyo y Comisión Nacional de Energía Atómica, San Carlos de Bariloche.}
-
-\medskip
 
 \cvitem{2015}{\textit{Introducción al procesamiento distribuido}, Profesor: Dr. Enzo A. Dari, 60 hs, Instituto Balseiro, Universidad Nacional de Cuyo, San Carlos de Bariloche.}
 
@@ -193,8 +263,6 @@ hs, Facultad de Psicología, Universidad Nacional de Rosario, Rosario.}
 
 \cvitem{2017}{\textit{Evolution of neural computation (Evolución de la computación neuronal)}, Instituto Balseiro, Universidad Nacional de Cuyo, San Carlos de Bariloche.}
 
-\medskip
-
 \cvitem{2017}{\textit{Latin American Summer School in Computational Neuroscience LACONEU 2017 (Escuela de Verano Latinoamericana en Neurociencia computacional LACONEU 2017)}, Título del proyecto: \textit{Adaptación sensorial sin plasticidad en la corteza visual V1}, Instituto de Sistemas Complejos de Valparaíso, Valparaíso, Chile.}
 
 \cvitem{2017}{\textit{Computational Neuroscience: new trends and challenges for the 2030 (Neurociencia Computacional: Nuevas Tendencias y Desafíos para el 2030)}, Instituto de Sistemas Complejos de Valparaíso, Valparaíso, Chile.}
@@ -209,9 +277,9 @@ hs, Facultad de Psicología, Universidad Nacional de Rosario, Rosario.}
 
 \section{Desarrollo de Software}
 
-\cvitem{Par-GPFEP}{Par-GPFEP es un programa de elementos finitos de propósito general diseñado para resolver problemas mecánicos que involucran flujos multifásicos, modelos turbulentos, seguimiento de superficies libres, transferencia de calor, interacción fluido-estructura y otros.}
+\cvitem{\texttt{Newton}}{Newton es un código maestro que resuelve acoplamiento explícitos e implícitos en cálculos no lineales, por ejemplo en acoplamientos fluidodinámicos, termohidráulicos, neutrónicos, etc (\httplink{www.github.com/fedecaccia/newton}).}
 
-\cvitem{Newton}{Newton es un código maestro que resuelve acoplamiento explícitos e implícitos en cálculos no lineales, por ejemplo en acoplamientos fluidodinámicos, termohidráulicos, neutrónicos, etc (\httplink{www.github.com/fedecaccia/newton}).}
+\cvitem{\texttt{Par-GPFEP}}{Par-GPFEP es un programa de elementos finitos de propósito general diseñado para resolver problemas mecánicos que involucran flujos multifásicos, modelos turbulentos, seguimiento de superficies libres, transferencia de calor, interacción fluido-estructura y otros.}
 
 
 \vspace{\fill}
